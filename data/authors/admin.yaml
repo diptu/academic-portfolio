@@ -1,0 +1,141 @@
+schema: hugoblox/author/v1
+slug: admin
+is_owner: true
+name:
+  display: Nazmul Alam Diptu
+  given: Nazmul Alam
+  family: Diptu
+  alternate: ''
+  pronunciation: ''
+  pronouns: he/him
+postnominals: []
+status:
+  icon: "🚀"
+role: Computer Science Background (Data Science Focus)
+bio: |
+  Nazmul Alam Diptu is a Computer Science professional with an engineering foundation in
+  full-stack frameworks (MERN and Next.js) and a strong specialization in Deep Learning
+  architectures, including Convolutional Neural Networks (CNNs) and ResNet-based models. His
+  trajectory is directed toward graduate research and a PhD track in Edge AI, TinyML,
+  Continual Learning, and Autonomous Systems.
+
+affiliations: []
+
+links:
+  - icon: at-symbol
+    url: mailto:diptunazmulalam@gmail.com
+    label: E-mail Me
+  - icon: brands/github
+    url: https://github.com/diptu
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/diptu/
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=4e8-JGgAAAAJ&hl=en
+
+interests:
+  # Primary domains
+  - Edge AI
+  - TinyML
+  - Continual Learning
+  - Autonomous Systems
+  # Secondary domains
+  - Computer Vision
+  - Federated Learning
+  - Distributed Machine Learning
+  - Model Compression
+  - Digital Twins
+  - Resource-Constrained AI
+
+education:
+  - degree: B.Sc. in Computer Science & Engineering
+    institution: 'North South University'
+    location: 'Dhaka, Bangladesh'
+    cgpa: '3.62/4.00'
+    start: 2015-01-15
+    end: null
+    summary: |
+      CGPA: 3.62/4.00. Graduate study preparation pursued as a sustained, self-directed
+      research program: GRE Quantitative and IELTS (Cambridge track) as supporting empirical
+      validation metrics within an active research trajectory toward Edge AI, TinyML, and
+      Autonomous Systems. See /education/ for the full research-focused narrative.
+
+experience:
+  - role: Freelance MLOps Engineer
+    org: Carboniq (Remote)
+    start: 2025-05-01
+    end: null
+    summary: |
+      - Architected scalable MLOps pipelines using MLflow and Airflow for automated model training and deployment.
+      - Built ETL/ELT workflows and multi-tenant REST APIs on PostgreSQL, containerized with Docker.
+      - Implemented CI/CD systems to support continuous integration and deployment of ML services.
+  - role: Product Analyst
+    org: Power Ledger (Perth)
+    start: 2022-10-01
+    end: 2024-02-29
+    summary: |
+      - Analyzed product usage and energy trading platform data to inform feature and reporting decisions.
+      - Automated recurring reporting workflows, reducing manual analysis effort.
+      - Collaborated cross-functionally with engineering teams to translate analytics into product requirements.
+  - role: Senior Technical Analyst
+    org: InsideMaps (Dhaka)
+    start: 2021-08-01
+    end: 2023-06-01
+    summary: |
+      - Optimized data pipelines to improve throughput and reliability of operational reporting.
+      - Automated manual operational workflows, reducing processing time.
+      - Designed workflow reporting systems used across operations teams.
+  - role: Junior Data Scientist
+    org: Me-Solshare (Dhaka)
+    start: 2019-11-01
+    end: 2021-08-01
+    summary: |
+      - Developed time-series forecasting models to support energy load planning.
+      - Built Machine Learning pipelines for dashboard analytics used in operational decision-making.
+      - Supported load planning processes with data-driven forecasting outputs.
+
+skills:
+  - name: Programming
+    items:
+      - label: Python
+      - label: JavaScript
+      - label: Rust
+      - label: C++
+  - name: Machine Learning
+    items:
+      - label: PyTorch
+      - label: TensorFlow
+      - label: Scikit-Learn
+      - label: OpenCV
+  - name: Data Engineering
+    items:
+      - label: Airflow
+      - label: dbt
+      - label: Spark
+      - label: Kafka
+  - name: Backend & DB
+    items:
+      - label: FastAPI
+      - label: Django
+      - label: Node.js
+      - label: Next.js
+      - label: PostgreSQL
+      - label: MongoDB
+      - label: Redis
+  - name: Cloud & DevOps
+    items:
+      - label: Azure
+      - label: AWS
+      - label: Docker
+      - label: Kubernetes
+      - label: GitHub Actions
+
+languages:
+  - name: English
+    level: 4
+    label: Proficient
+
+awards:
+  - title: Deep Learning Specialization
+    awarder: DeepLearning.AI (Coursera)
+  - title: Machine Learning Specialization
+    awarder: DeepLearning.AI / Stanford (Coursera)

@@ -1,0 +1,21 @@
+{{/* Local override of the kit's landing_page.html partial.
+
+     The upstream version renders sections with no wrapping element, so
+     "type: landing" pages (Home, Education, Publications, Research
+     Interests, Experience, Projects index) never get a data-pagefind-body
+     marker. Pagefind explicitly skips any page lacking that marker once at
+     least one page on the site has it (our blog posts and project pages
+     do, via the kit's single.html) -- so every landing page was silently
+     excluded from the local search index. This override adds the marker
+     around the same unchanged section-rendering logic, with no other
+     behavior change.
+*/}}
+{{- $sections := partial "hbx/sections.html" . -}}
+
+<div data-pagefind-body>
+{{ range $index, $block := $sections }}
+  {{ if or (not $block.demo) ($block.demo | and (eq (os.Getenv "HUGO_BLOX_DEMO") "true")) }}
+    {{ partial "functions/parse_block_v3" (dict "page" $ "block" $block) }}
+  {{ end }}
+{{ end }}
+</div>

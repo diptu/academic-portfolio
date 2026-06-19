@@ -1,0 +1,21 @@
+[build]
+  command = "pnpm install --no-frozen-lockfile && hugo --gc --minify && pnpm run pagefind"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.162.0"
+  GO_VERSION = "1.22.0"
+  NODE_VERSION = "22"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.production.environment]
+  HUGO_ENV = "production"
+
+[context.deploy-preview]
+  command = "pnpm install --no-frozen-lockfile && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL && pnpm run pagefind"
+
+[context.branch-deploy]
+  command = "pnpm install --no-frozen-lockfile && hugo --gc --minify -b $DEPLOY_PRIME_URL && pnpm run pagefind"
+
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"

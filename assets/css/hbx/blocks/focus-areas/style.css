@@ -1,0 +1,43 @@
+/*
+  Smooth transition effects for the focus-areas block timeline layout,
+  shared by Professional Experience (content/experience.md) and Research
+  Direction Path (content/research.md), since both use this same block
+  and layout and therefore the same markup structure.
+
+  Auto-discovered by the kit css.html partial via resources.Match against
+  css slash hbx slash blocks slash star star slash style.css, no manual
+  import needed.
+
+  Selectors are scoped to the exact, unique class combinations the
+  timeline layout emits, verified against the block source; these
+  combinations do not appear in any other block or layout in this kit,
+  so nothing else on the site is affected.
+*/
+
+/* Vertical connector line */
+.absolute.left-1\/2.w-1.h-full.bg-gradient-to-b.from-primary-400.to-secondary-400 {
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.w-8.h-8.bg-white.dark\:bg-gray-800.border-4.border-primary-500.rounded-full {
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease-in-out;
+}
+.w-8.h-8.bg-white.dark\:bg-gray-800.border-4.border-primary-500.rounded-full:hover {
+  transform: translateY(-2px) scale(1.15);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.15);
+}
+
+.w-5\/12 > .bg-white.dark\:bg-gray-800.p-6.rounded-xl.shadow-lg {
+  transition: all 0.4s ease-in-out;
+}
+.w-5\/12 > .bg-white.dark\:bg-gray-800.p-6.rounded-xl.shadow-lg:hover {
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .absolute.left-1\/2.w-1.h-full.bg-gradient-to-b.from-primary-400.to-secondary-400,
+  .w-8.h-8.bg-white.dark\:bg-gray-800.border-4.border-primary-500.rounded-full,
+  .w-5\/12 > .bg-white.dark\:bg-gray-800.p-6.rounded-xl.shadow-lg {
+    transition: none;
+  }
+}
