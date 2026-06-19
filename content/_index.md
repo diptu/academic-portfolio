@@ -39,10 +39,15 @@ sections:
   - block: markdown
     id: contact
     content:
-      title: ''
+      title: 'Get in Touch'
       subtitle: ''
       text: |-
-        <a href="mailto:diptunazmulalam@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/diptu/">LinkedIn</a> | <a href="https://github.com/diptu">GitHub</a>
+        Fellow researchers, academic recruiters, and engineering collaborators are welcome to reach out directly.
+
+        <div class="flex flex-wrap gap-4 mt-2">
+        <a href="https://www.linkedin.com/in/diptu/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-secondary-600 hover:bg-secondary-500 text-white font-medium rounded-xl shadow-lg shadow-secondary-500/25 hover:shadow-xl hover:shadow-secondary-500/30 transition-all">Message on LinkedIn</a>
+        <a href="mailto:diptunazmulalam@gmail.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-500 text-white font-medium rounded-xl shadow-lg shadow-primary-500/25 hover:shadow-xl hover:shadow-primary-500/30 transition-all">Send an Email</a>
+        </div>
     design:
       columns: '1'
 ---
